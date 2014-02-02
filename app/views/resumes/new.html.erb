@@ -1,0 +1,25 @@
+<style>
+.draggable { width: 500px; height: 150px; padding: 0.5em; float: left; margin: 10px; background-color: #E0E0E0;}
+.droppable { width: 800px; height: 150px; padding: 0.5em; float: left; margin: 10px; background-color: #E0E0E0;}
+</style>
+<h1>New resume</h1>
+
+<%= render 'form' %>
+<% @areas.each do |area|%>
+<div class="draggable" style="border-style:solid;
+border-width:2px;">
+<p> Area <strong><%= area.name %> </strong></p>
+<ul>
+     <% area.area_attributes.each do |attr| %>
+     <li>
+          <%= attr.name%>
+          <%= attr.value%>
+     </li>
+     <%end%>
+</ul>
+</div>
+<% end %>
+
+<div class="droppable"></div>
+
+<%= link_to 'Back', resumes_path %>

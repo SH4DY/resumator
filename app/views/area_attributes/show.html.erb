@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @area_attribute.name %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @area_attribute.value %>
+</p>
+
+<%= link_to 'Edit', edit_area_attribute_path(@area_attribute) %> |
+<%= link_to 'Back', area_attributes_path %>

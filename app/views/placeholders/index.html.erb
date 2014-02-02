@@ -1,0 +1,27 @@
+<h1>Listing placeholders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @placeholders.each do |placeholder| %>
+      <tr>
+        <td><%= placeholder.position %></td>
+        <td><%= link_to 'Show', placeholder %></td>
+        <td><%= link_to 'Edit', edit_placeholder_path(placeholder) %></td>
+        <td><%= link_to 'Destroy', placeholder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Placeholder', new_placeholder_path %>

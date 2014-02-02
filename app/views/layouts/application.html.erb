@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ResumatorProto</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= alert = session[:user_id]  %>
+
+<% if session[:user_id] %>
+<ul>
+<li> <%= link_to 'Dashboard', dashboard_url %></li>
+<li> <%= link_to 'New Area', new_area_url %></li>
+<li> <%= link_to 'New Resume', new_resume_url %></li>
+<li> <%= link_to 'Logout', logout_url, method: :delete %></li>
+</ul>
+<% end %>
+<div="main">
+<%= yield %>
+ </div>
+</body>
+</html>

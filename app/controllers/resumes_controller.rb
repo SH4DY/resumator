@@ -32,7 +32,8 @@ class ResumesController < ApplicationController
       if @resume.save #Dont even save placeholders if resume couldn't be saved
         sorting = session[:sorting]
         sorting.each_with_index do |id, index|
-          Placeholder.create(position: index, area_id: id, resume_id: @resume.id)
+          Placeholder.create(position: index, area_id: id,
+                              resume_id: @resume.id) if id #Don't save empty array elements
         end
         session[:sorting] = nil
         format.html { redirect_to @resume, notice: 'Resume was successfully created. Including placeholders' }
@@ -68,9 +69,18 @@ class ResumesController < ApplicationController
     end
   end
 
-  def sort_areas
-    @sorting = params[:area]
-    session[:sorting] = @sorting
+  def sort_areas #This gets called everytime a area is dropped onto a droppable
+    position = params[:position]
+    area_id = params[:area_id]
+
+    if !session.has_key?(:sorting) #check if the user is already sorting
+      session[:sorting] = Array.new
+      array = session[:sorting]
+    else
+      array = session[:sorting]
+    end
+
+    array[position.to_i] = area_id
     render nothing: true
   end
 

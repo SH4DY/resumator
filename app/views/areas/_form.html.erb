@@ -1,38 +1,51 @@
-<%= form_for(@area) do |f| %>
-<% if @area.errors.any? %>
-<div id="error_explanation">
-  <h2><%= pluralize(@area.errors.count, "error") %> prohibited this area from being saved:</h2>
 
-  <ul>
-    <% @area.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
+<section>
+  <div class="column">
+    <%= form_for(@area) do |f| %>
+    <% if @area.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@area.errors.count, "error") %> prohibited this area from being saved:</h2>
+
+      <ul>
+        <% @area.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
     <% end %>
-  </ul>
-</div>
-<% end %>
 
-<div class="field">
-  <%= f.label :name %><br>
-  <%= f.text_area :name %>
-</div>
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_area :name %>
+    </div>
+  </div>
+</section>
 
+<section>
 
-<%= f.fields_for :area_attributes do |builder| %>
-<div class="area_attribute" style="border-style:solid;
-border-width:2px;">
-<p> <%= builder.label :name, "Name of the attribute" %> </p>
-<p> <%= builder.text_area :name %> </p>
+  <!-- Nested forms for the area_attributes-->
+  <%= f.fields_for :area_attributes do |builder| %>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel_heading">
+        <%= builder.label :name, "Name of the attribute" %>
+        <%= builder.text_area :name %>
+      </div>
+      <div class="panel-body">
+        <%= builder.label :value, "Value of the attribute" %>
+        <%= builder.text_area :value %>
+        <%= builder.check_box :_destroy %>
+        <%= builder.label :_destroy, "Remove Question" %>
+      </div>
 
-<p> <%= builder.label :value, "Value of the attribute" %> </p>
-<p> <%= builder.text_area :value %> </p>
+    </div>
+  </div>
+  <% end %>
 
-<p> <%= builder.check_box :_destroy %>
-    <%= builder.label :_destroy, "Remove Question" %></p>
-</div>
-
-<% end %>
+</section>
 
 <div class="actions">
-  <%= f.submit %>
+    <%= f.submit(nil,:class => 'positive-button') %>
 </div>
+
 <% end %>

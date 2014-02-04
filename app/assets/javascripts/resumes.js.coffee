@@ -4,9 +4,22 @@
 
 
 $ ->
-    $(".draggable").draggable revert: "invalid"
-    $(".droppable").droppable drop: (event, ui) ->
-        $(this).addClass "ui-state-highlight"
+  $(".area").draggable revert: "invalid"
+  $(".droppable").droppable drop: (event, ui) ->
+    $(this).addClass "ui-state-highlight"
+
+$ ->
+  $('.resume_droppable').droppable
+    accept: ".area"
+    hoverClass: "ui-state-hover"
+    drop: (event, ui) ->
+      $.post($(this).data('update-url'), {position: $(this).attr('id'), area_id: $(ui.draggable).attr('area_id')})
+
+
+$ ->
+  $('#resume_droppable area_draggable').sortable
+
+
 
 $ ->
   $('#areas').sortable

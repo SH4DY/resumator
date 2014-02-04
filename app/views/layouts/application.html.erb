@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Resumator Proto" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Resumator Proto" %>">
-    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
-    </main>
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "Resumator Proto" %></title>
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Resumator Proto" %>">
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+    <%= render 'layouts/navigation' %>
+  </header>
+  <main>
+   <section>
+   <%= render 'layouts/messages' %>
+    <%= yield %>
+  </section>
+</main>
+
+</body>
+
+<footer>
+  <div class="col-md-6">
+    Copyright 2013
+  </div>
+  <div class="col-md-6">
+    All rights reserved.
+  </div>
+</footer>
+
 </html>

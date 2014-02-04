@@ -4,32 +4,46 @@
 </style>
 <h1>New resume</h1>
 
-<%= render 'form' %>
-<% @areas.each do |area|%>
-<div class="draggable" style="border-style:solid;
-border-width:2px;">
-<p> Area <strong><%= area.name %> </strong></p>
-<ul>
-   <% area.area_attributes.each do |attr| %>
-   <li>
-      <%= attr.name%>
-      <%= attr.value%>
-  </li>
-  <%end%>
-</ul>
-</div>
-<% end %>
-<br />
-<div class="droppable"></div>
+<section>
+  <%= render 'form' %>
+</section>
 
-<ul id="areas" data-update-url="<%= sort_areas_resumes_url %>">
-   <% @areas.each do |area| %>
-       <%= content_tag_for :li, area do %>
-           <span class="handle">[drag]</span>
-           <%= link_to 'Go to this area',area%>
+<section>
+  <div class="column">
+    <div class="resume_droppable" id="1" data-update-url="<%= sort_areas_resumes_url %>"></div>
+    <div class="resume_droppable" id="2" data-update-url="<%= sort_areas_resumes_url %>"></div>
+    <div class="resume_droppable" id="3" data-update-url="<%= sort_areas_resumes_url %>"></div>
+  </div>
 
-       <% end %>
-   <% end %>
-</ul>
+  <div class="column">
+    <% @areas.each do |area|%>
+    <%= content_tag_for(:div, area, nil, area_id: area.id) do %>
 
-<%= link_to 'Back', resumes_path %>
+    <p> Area <strong><%= area.name %> </strong></p>
+
+    <ul>
+      <% area.area_attributes.each do |attr| %>
+      <li>
+        <%= attr.name%>
+        <%= attr.value%>
+      </li>
+      <%end%>
+    </ul>
+    <% end %>
+    <% end %>
+  </div>
+</section>
+
+<section>
+
+  <ul id="areas" data-update-url="<%= sort_areas_resumes_url %>">
+    <% @areas.each do |area| %>
+    <%= content_tag_for :li, area do %>
+    <span class="handle">[drag]</span>
+    <%= link_to 'Go to this area',area%>
+
+    <% end %>
+    <% end %>
+  </ul>
+
+  <%= link_to 'Back', resumes_path %>

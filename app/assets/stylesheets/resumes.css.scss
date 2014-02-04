@@ -7,3 +7,16 @@
   color: #777;
   cursor: move;
 }
+
+.resume_droppable {
+  border-style:solid;
+  height:200px;
+  width:400px;
+}
+
+.resume_dropped {
+  background-color: #eee;
+  border-style:solid;
+  height:200px;
+  width:200px;
+}

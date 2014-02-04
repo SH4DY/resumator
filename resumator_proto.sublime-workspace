@@ -1,0 +1,810 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"user",
+				"user_name"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/Shady/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 124,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/resumes/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 918,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/fixtures/placeholders.yml",
+			"settings":
+			{
+				"buffer_size": 129,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/placeholder.rb",
+			"settings":
+			{
+				"buffer_size": 89,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Shady/Library/Application Support/Sublime Text 2/Packages/JS2Coffee/README.md",
+			"settings":
+			{
+				"buffer_size": 1848,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/resumes.js.coffee",
+			"settings":
+			{
+				"buffer_size": 580,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/resumes_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2306,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1976,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1222,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/application.js",
+			"settings":
+			{
+				"buffer_size": 721,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/areas_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1975,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"js2",
+				"JS2Coffee: Convert & Overwrite Current File"
+			],
+			[
+				"package control",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pakca",
+				"Package Control: Discover Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"book",
+				"Bookmarks: Select Next"
+			],
+			[
+				"bookm",
+				"Bookmarks: Clear All"
+			],
+			[
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"latex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"snipp",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"synt",
+				"Set Syntax: C#"
+			],
+			[
+				"case",
+				"Convert Case: Lower Case"
+			],
+			[
+				"subsub",
+				"Snippet: Sub Sub Section"
+			],
+			[
+				"Snippet: ",
+				"Snippet: \\begin{}…\\end{}"
+			],
+			[
+				"tex",
+				"Set Syntax: LaTeX"
+			]
+		],
+		"width": 498.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Shady/Dev/rails/resumator_proto/app/models/area.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/test/controllers/placeholders_controller_test.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/assets/javascripts/application.js",
+		"/Users/Shady/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Shady/Dev/rails/resumator_proto/app/models/placeholder.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/assets/stylesheets/resumes.css.scss",
+		"/Users/Shady/Dev/rails/resumator_proto/config/routes.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/controllers/resumes_controller.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/controllers/areas_controller.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/resumes/new.html.erb",
+		"/Users/Shady/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/areas/_area_attributes_fields.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/areas/new.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/areas/show.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/areas/_form.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/models/area_attribute.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/db/migrate/20140202182224_create_area_attributes.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/layouts/application.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/dashboard/index.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/db/migrate/20140201211458_create_attributes.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/attributes/new.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/controllers/attributes_controller.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/areas/_form_multiple.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/attributes/_form_multiple.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/config/boot.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/sessions/new.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/controllers/sessions_controller.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/admin/index.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/controllers/application_controller.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/welcome/index.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/controllers/users_controller.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/controllers/dashboard_controller.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/controllers/welcome_controller.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/assets/javascripts/welcome.js.coffee",
+		"/Users/Shady/Dev/rails/resumator_proto/app/models/user.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/users/index.html.erb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/views/users/_form.html.erb",
+		"/Users/Shady/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Shady/Dev/rails/resumator_proto/db/migrate/20140201211659_create_placeholders.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/db/migrate/20140201211104_create_users.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/Gemfile",
+		"/Users/Shady/Dev/rails/resumator_proto/db/migrate/20140201211213_create_areas.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/db/migrate/20140201211434_create_resumes.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/db/schema.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/models/resume.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/models/attribute.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/db/seeds.rb",
+		"/Users/Shady/Dev/rails/resumator_proto/app/assets/stylesheets/application.css",
+		"/Users/Shady/Dev/Java/jasa/examples/versionManuel/model.xml",
+		"/Users/Shady/Dev/Java/jasa/examples/slaAuctionConfig/model.xml",
+		"/Users/Shady/Dev/Java/jasa/data/price1.csv",
+		"/Users/Shady/Desktop/Meetingsprotokoll_080114",
+		"/Users/Shady/Desktop/Meetingsprotokoll_08012014",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1389348072/culturall/usr/local/test/htdocs/ws13/wae02/index.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1389348336/culturall/usr/local/test/htdocs/ws13/wae02/autohandler",
+		"/Users/Shady/Dev/Java/jasa/examples/chiarellaAndIori/model.xml",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387725619/culturall/usr/local/test/htdocs/ws13/wae02/editor.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387725342/culturall/usr/local/test/htdocs/ws13/wae02/index.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387726323/culturall/usr/local/test/htdocs/ws13/wae02/editor.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387722785/culturall/usr/local/test/htdocs/ws13/wae02/login-form.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387722763/culturall/usr/local/test/htdocs/ws13/wae02/bad_session.html",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387722917/culturall/usr/local/test/htdocs/ws13/wae07/git/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387722816/culturall/usr/local/test/htdocs/ws13/wae02/form_validation.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387723042/culturall/usr/local/test/htdocs/ws13/wae02/lib/login.html",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387722643/culturall/usr/local/test/htdocs/ws13/wae02/autohandler1",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387722771/culturall/usr/local/test/htdocs/ws13/wae02/README.txt",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387722671/culturall/usr/local/test/htdocs/ws13/wae02/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387129932/culturall/usr/local/test/htdocs/ws13/wae02/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387112128/culturall/usr/local/test/htdocs/ws13/wae02/sidebar.mas",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387112360/culturall/usr/local/test/htdocs/ws13/wae02/login-form.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387112346/culturall/usr/local/test/htdocs/ws13/wae02/autohandler_real",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387112315/culturall/usr/local/test/htdocs/ws13/wae02/README.txt",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387112603/culturall/usr/local/test/htdocs/ws13/wae07/git/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387113808/culturall/usr/local/test/htdocs/ws13/wae02/bad_session.html",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387111976/culturall/usr/local/test/htdocs/ws13/wae02/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387117714/culturall/usr/local/test/htdocs/ws13/wae07/git/index.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387117567/culturall/usr/local/test/htdocs/ws13/wae07/git/editor.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387117531/culturall/usr/local/test/htdocs/ws13/wae07/git/index.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387112550/culturall/usr/local/test/htdocs/ws13/wae07/git/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387112438/culturall/usr/local/test/htdocs/ws13/wae08/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387112370/culturall/usr/local/test/htdocs/ws13/wae05/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1387112079/culturall/usr/local/test/htdocs/ws13/wae07/git/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386424576/culturall/usr/local/test/htdocs/ws13/wae02/header.mas",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386423759/culturall/usr/local/test/htdocs/ws13/wae02/sidebar.mas",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386420321/culturall/usr/local/test/htdocs/ws13/wae02/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386424900/culturall/usr/local/test/htdocs/ws13/wae02/login-form.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386421770/culturall/usr/local/test/htdocs/ws13/wae02/dao/entries.mas",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386419445/culturall/usr/local/test/htdocs/ws13/wae02/index.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386421583/culturall/usr/local/test/htdocs/ws13/wae02/index.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386418670/culturall/usr/local/test/htdocs/ws13/wae02/README.txt",
+		"/Users/Shady/Desktop/MR2-Notizen",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386422819/culturall/usr/local/test/htdocs/ws13/wae02/login-form.mas",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386424882/culturall/usr/local/test/htdocs/ws13/wae02/login-form.mas",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386420020/culturall/usr/local/test/htdocs/ws13/wae02/header.mas",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386423469/culturall/usr/local/test/htdocs/ws13/wae02/login_page.mas",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386420844/culturall/usr/local/test/htdocs/ws13/wae07/git/autohandler",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386421533/culturall/usr/local/test/htdocs/ws13/wae02/entry.mas",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386419194/culturall/usr/local/test/htdocs/ws13/wae02/index.php",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386420800/culturall/usr/local/test/htdocs/ws13/wae07/git/index.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386420829/culturall/usr/local/test/htdocs/ws13/wae07/git/README",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1386420504/culturall/usr/local/test/htdocs/ws13/wae07/index.html",
+		"/Users/Shady/Desktop/LONDON Vet Medcare VS1325-11-2013_06-57-05.csv",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1384942178/culturall/usr/local/test/htdocs/ws13/wae02/form_validation.mc",
+		"/var/folders/lh/bxhz4gds5wj1vm_kstd06n340000gn/T/sublime-sftp-browse-1384939579/culturall/usr/local/test/htdocs/ws13/wae02/index.mc",
+		"/Users/Shady/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/culturall",
+		"/Users/Shady/Desktop/Protokoll 21.10.2013 mit Tutor",
+		"/Users/Shady/Downloads/BAC2/main.tex",
+		"/Users/Shady/Dev/Java/ase/backend/src/main/webapp/WEB-INF/.gitignore"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tab",
+			"<% end %>\n",
+			"task",
+			"tab",
+			"id=\"strategy\"",
+			"strategy",
+			"markup",
+			"tradeDirectionPolicy",
+			"scheduler",
+			"buy",
+			"valuation",
+			"lol",
+			"strategy",
+			"markupStrategy",
+			"staticpopulation",
+			"population",
+			"simulationController",
+			"schedu",
+			"simplemarku",
+			"staticPop",
+			"strate",
+			"editor",
+			"agentinitiali",
+			"agentInitialiserProxy\ncda",
+			"linearCombinationTraderPrototype",
+			"linearCombinationTraders",
+			"prng",
+			"returnForecastStrategy",
+			"linearCombinationValuationPolicy",
+			"noiseTraderFactory",
+			"linearCombinationTraderPrototype",
+			"linearCombinationTraderFactory",
+			"returnForecastStrategy",
+			"staticPop",
+			"google",
+			"                <& #autohandler, name => $username, password => $password&>\n",
+			"                \n",
+			"Markt",
+			"einfügen",
+			"screenshot",
+			"ingress",
+			"resour",
+			"byte",
+			"system",
+			"Dalvik",
+			"besteh",
+			"ludei"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/Shady/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/resumes/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								381,
+								381
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/fixtures/placeholders.yml",
+					"settings":
+					{
+						"buffer_size": 129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								109,
+								109
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/placeholder.rb",
+					"settings":
+					{
+						"buffer_size": 89,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								89,
+								89
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "/Users/Shady/Library/Application Support/Sublime Text 2/Packages/JS2Coffee/README.md",
+					"settings":
+					{
+						"buffer_size": 1848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								237
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 320.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/assets/javascripts/resumes.js.coffee",
+					"settings":
+					{
+						"buffer_size": 580,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								365,
+								365
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/resumes_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								830,
+								830
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 289.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1976,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								381,
+								381
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 1222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								623,
+								623
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/assets/javascripts/application.js",
+					"settings":
+					{
+						"buffer_size": 721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								444,
+								444
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/controllers/areas_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								525,
+								508
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 23.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.373054795215,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.sftp":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"app/controllers/resumes_controller.rb"
+			],
+			[
+				"area",
+				"app/controllers/areas_controller.rb"
+			],
+			[
+				"placeholder",
+				"app/models/placeholder.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 207.0,
+	"status_bar_visible": true
+}

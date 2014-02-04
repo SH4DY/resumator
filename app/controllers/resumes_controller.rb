@@ -26,10 +26,16 @@ class ResumesController < ApplicationController
   # POST /resumes.json
   def create
     @resume = Resume.new(resume_params)
+    @resume.user_id = current_user().id
 
     respond_to do |format|
-      if @resume.save
-        format.html { redirect_to @resume, notice: 'Resume was successfully created.' }
+      if @resume.save #Dont even save placeholders if resume couldn't be saved
+        sorting = session[:sorting]
+        sorting.each_with_index do |id, index|
+          Placeholder.create(position: index, area_id: id, resume_id: @resume.id)
+        end
+        session[:sorting] = nil
+        format.html { redirect_to @resume, notice: 'Resume was successfully created. Including placeholders' }
         format.json { render action: 'show', status: :created, location: @resume }
       else
         format.html { render action: 'new' }
@@ -62,6 +68,13 @@ class ResumesController < ApplicationController
     end
   end
 
+  def sort_areas
+    @sorting = params[:area]
+    session[:sorting] = @sorting
+    render nothing: true
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_resume
@@ -72,4 +85,4 @@ class ResumesController < ApplicationController
     def resume_params
       params.require(:resume).permit(:name)
     end
-end
+  end

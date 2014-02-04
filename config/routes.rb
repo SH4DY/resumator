@@ -12,10 +12,14 @@ ResumatorProto::Application.routes.draw do
   resources :users
 
   get "dashboard/index"
+
   get "welcome/index"
+
   resources :placeholders
 
-  resources :resumes
+  resources :resumes do
+    collection {post :sort_areas}
+  end
 
   resources :areas
 

@@ -10,16 +10,26 @@
 border-width:2px;">
 <p> Area <strong><%= area.name %> </strong></p>
 <ul>
-     <% area.area_attributes.each do |attr| %>
-     <li>
-          <%= attr.name%>
-          <%= attr.value%>
-     </li>
-     <%end%>
+   <% area.area_attributes.each do |attr| %>
+   <li>
+      <%= attr.name%>
+      <%= attr.value%>
+  </li>
+  <%end%>
 </ul>
 </div>
 <% end %>
-
+<br />
 <div class="droppable"></div>
+
+<ul id="areas" data-update-url="<%= sort_areas_resumes_url %>">
+   <% @areas.each do |area| %>
+       <%= content_tag_for :li, area do %>
+           <span class="handle">[drag]</span>
+           <%= link_to 'Go to this area',area%>
+
+       <% end %>
+   <% end %>
+</ul>
 
 <%= link_to 'Back', resumes_path %>

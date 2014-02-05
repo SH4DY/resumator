@@ -1,11 +1,22 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @resume.name %>
 
-  @resume
+  <h2><%= @resume.name %></h2>
+
+  <% @resume.areas.each do |area| %>
+  <div class="area">
+    <ul>
+      <% for attribute in area.area_attributes do%>
+      <li> <strong>Attribute Name:</strong> <%= attribute.name %> <br />
+            <strong> Value: </strong> <%= attribute.value %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
 </p>
 
+<%= link_to "Generate PDF of this resume", resume_path(@resume, format: "pdf") %>
 <%= link_to 'Edit', edit_resume_path(@resume) %> |
 <%= link_to 'Back', resumes_path %>

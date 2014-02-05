@@ -10,6 +10,16 @@ class ResumesController < ApplicationController
   # GET /resumes/1
   # GET /resumes/1.json
   def show
+    @resume = Resume.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.pdf do
+        pdf = ResumePdf.new(@resume, view_context)
+        send_data pdf.render, filename: "resume_#{@resume.name}_#{current_user().name}.pdf",
+        type: "application/pdf",
+        disposition: "inline"
+      end
+    end
   end
 
   # GET /resumes/new

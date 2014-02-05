@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#PDF Generation
+gem 'prawn'
+
 #Bootstrap dependencies
 gem 'bootstrap-sass'
 group :development do

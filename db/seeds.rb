@@ -7,17 +7,27 @@
 #   Mayor.create(name:'Emanuel', city: cities.first)
 
 
-users = User.create([{name: "shady", password:"password"},{name:"admin", password:"password"}])
+users = User.create([{name: "shady", password: 'password', password_confirmation: 'password'}])
 
 area1 = Area.create(name: "Contact Info", user: users.first)
 area2 = Area.create(name: "Skills", user: users.first)
+area3 = Area.create(name: "Education", user: users.first)
 
-attributes = Attribute.create([{name: "Phone",value:"0664553444", area:area1},
+attributes = AreaAttribute.create([
+     {name: "Phone",value:"0664553444", area:area1},
      {name: "email",value:"ramon.lopez@aon.at", area:area1},
+     {name: "address",value:"Kirchstrasse 2", area:area1},
+
      {name: "Softskills",value:"Strong leadership abilities", area:area2},
-     {name: "IT-Skills",value:"Photoshop, Illustrator, Office", area:area2}])
+     {name: "IT-Skills",value:"Photoshop, Illustrator, Office", area:area2},
+
+     {name: "Highschool",value:"Higher education entrance certificate", area:area3},
+     {name: "University - FH Vorarlberg",value:"Bachelor of Science - Software and Information Engineering", area:area3},
+     {name: "University - TU Vienna",value:"Master of Science - Software Engineering and Internet Computing", area:area3}])
 
 resume1 = Resume.create(name: "First resume ever", user: users.first)
 
-placeholder1 = Placeholder.create(position: 1,resume: resume1, area: area1)
-placeholder2 = Placeholder.create(position: 2, resume: resume1, area: area2)
+placeholder1_1 = Placeholder.create(position: 0,resume: resume1, area: area1)
+placeholder2_1 = Placeholder.create(position: 1, resume: resume1, area: area2)
+placeholder2_1 = Placeholder.create(position: 2, resume: resume1, area: area3)
+

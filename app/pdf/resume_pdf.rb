@@ -3,36 +3,35 @@ class ResumePdf < Prawn::Document
     super(top_margin: 70)
     @resume = resume
     @view = view
-    resume_title
-  end
+    print_resume_title
 
-  def resume_title
-    text "#{@resume.name}", size: 30, style: :bold
-  end
-
-  def line_items
-    move_down 20
-    table line_item_rows do
-      row(0).font_style = :bold
-      columns(1..3).align = :right
-      self.row_colors = ["DDDDDD", "FFFFFF"]
-      self.header = true
+    @resume.areas.each do |area|
+      print_areas(area)
     end
-  end
 
-  def line_item_rows
-    [["Product", "Qty", "Unit Price", "Full Price"]] +
-    @order.line_items.map do |item|
-      [item.name, item.quantity, price(item.unit_price), price(item.full_price)]
+    stroke_axis
+    stroke_circle [0, 0], 10
+    bounding_box([100, 300], :width => 300, :height => 200) do
+     stroke_bounds
+     stroke_circle [0, 0], 10
     end
-  end
 
-  def price(num)
-    @view.number_to_currency(num)
-  end
+ end
 
-  def total_price
-    move_down 15
-    text "Total Price: #{price(@order.total_price)}", size: 16, style: :bold
+ def print_resume_title
+  text "#{@resume.name}", size: 30, style: :bold
+end
+
+def print_areas(area)
+  move_down 20
+  text "#{area.name}", size: 20, style: :bold
+  area.area_attributes.each do |a|
+    print_area_attributes(a)
   end
+end
+
+def print_area_attributes(attribute)
+  text "#{attribute.name}", size: 10, style: :bold
+  text "#{attribute.value}", size:10
+end
 end

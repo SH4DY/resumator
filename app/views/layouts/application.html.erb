@@ -5,8 +5,7 @@
   <title><%= content_for?(:title) ? yield(:title) : "Resumator Proto" %></title>
   <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Resumator Proto" %>">
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>
 </head>
 <body>
 

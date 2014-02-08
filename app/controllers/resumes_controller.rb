@@ -79,7 +79,9 @@ class ResumesController < ApplicationController
     end
   end
 
-  def sort_areas #This gets called everytime a area is dropped onto a droppable
+  #This gets called everytime a area is dropped onto a droppable
+  #resume OR removed (dragged out or resetted) from a resume
+  def sort_areas
     position = params[:position]
     area_id = params[:area_id]
 

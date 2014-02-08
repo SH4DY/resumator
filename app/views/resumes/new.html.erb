@@ -7,16 +7,16 @@
 </section>
 
 <section>
-  <div class="column">
+  <div class="col-md-6">
     <div class="resume_droppable" id="0" data-update-url="<%= sort_areas_resumes_url %>"></div>
     <div class="resume_droppable" id="1" data-update-url="<%= sort_areas_resumes_url %>"></div>
     <div class="resume_droppable" id="2" data-update-url="<%= sort_areas_resumes_url %>"></div>
   </div>
 
-  <div class="column">
+  <div id="areas" class="col-md-4">
     <% @areas.each do |area|%>
     <%= content_tag_for(:div, area, nil, area_id: area.id) do %>
-    <div class="panel panel-default">
+    <div class="panel panel-default area-panel">
       <div class="panel-heading">Area <strong><%= area.name %> </strong>
       </div>
       <div class="panel-body">
@@ -30,18 +30,5 @@
     <% end %>
   </div>
 
-</section>
-
-<section>
-
-  <ul id="areas" data-update-url="<%= sort_areas_resumes_url %>">
-    <% @areas.each do |area| %>
-    <%= content_tag_for :li, area do %>
-    <span class="handle">[drag]</span>
-    <%= link_to 'Go to this area',area%>
-
-    <% end %>
-    <% end %>
-  </ul>
 </section>
 <%= link_to 'Back', resumes_path %>

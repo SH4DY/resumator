@@ -11,9 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-migrate-min
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery.ui.all
 //= require bootstrap
-//= require_tree .
 //= require_tree ../../../vendor/assets/javascripts/.
+//= require_tree .
+

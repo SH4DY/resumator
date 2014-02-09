@@ -1,6 +1,11 @@
 ResumatorProto::Application.routes.draw do
   mount Mercury::Engine => '/'
+
   resources :area_attributes
+
+  resources :areas do
+    member {put :mercury_update}
+  end
 
   get 'dashboard' => 'dashboard#index'
 

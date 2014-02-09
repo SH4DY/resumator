@@ -67,6 +67,13 @@ class AreasController < ApplicationController
     @area_attributes = @area.area_attributes
   end
 
+  def mercury_update
+    @area = Area.find(params[:id])
+    @area.name = params[:content][:area_name][:value]
+    @area.save!
+    render text: ''
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_area

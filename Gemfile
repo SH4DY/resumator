@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 #Mercury Editor
 gem 'mercury-rails', :git => 'git://github.com/jejacks0n/mercury.git'
+gem 'jquery-migrate-rails'
 
 #PDF Generation
 gem 'prawn'

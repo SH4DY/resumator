@@ -16,3 +16,4 @@
 //= require jquery.ui.all
 //= require bootstrap
 //= require_tree .
+//= require_tree ../../../vendor/assets/javascripts/.

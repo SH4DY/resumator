@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#Mercury Editor
+gem 'mercury-rails', :git => 'git://github.com/jejacks0n/mercury.git'
+
 #PDF Generation
 gem 'prawn'
 

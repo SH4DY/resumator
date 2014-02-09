@@ -15,7 +15,7 @@ class AreasController < ApplicationController
   # GET /areas/new
   def new
     @area = Area.new
-    3.times {@area.area_attributes.build}
+    1.times {@area.area_attributes.build}
   end
 
   # GET /areas/1/edit

@@ -25,23 +25,22 @@
 
   <!-- Nested forms for the area_attributes-->
   <%= f.fields_for :area_attributes do |builder| %>
-  <div class="col-md-4">
+  <div class="col-md-6">
     <div class="panel panel-default">
-      <div class="panel_heading">
-        <%= builder.label :name, "Name of the attribute" %>
-        <%= builder.text_area :name %>
-      </div>
       <div class="panel-body">
+        <!-- We set the name to default atm, because we are only
+          using one area_attribute at this stage of dev.-->
+        <%= builder.hidden_field :name, :value =>'default' %>
         <%= builder.label :value, "Value of the attribute" %>
-        <%= builder.text_area :value %>
-        <%= builder.check_box :_destroy %>
-        <%= builder.label :_destroy, "Remove Question" %>
+        <%= builder.text_area :value, :class => "span6", :rows => 50%>
       </div>
-
     </div>
   </div>
   <% end %>
 
+<div class="col-md-6">
+
+</div>
 </section>
 <%= f.submit 'Create',:class => 'positive-button' %>
 

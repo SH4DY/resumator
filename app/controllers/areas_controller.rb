@@ -69,7 +69,8 @@ class AreasController < ApplicationController
 
   def mercury_update
     @area = Area.find(params[:id])
-    @area.name = params[:content][:area_name][:value]
+    Rails.logger.debug("Area in the controller: #{@area.inspect}")
+    @area.name = params[:content][:area][:value]
     @area.save!
     render text: ''
   end
@@ -82,8 +83,9 @@ class AreasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def area_params
-      params.require(:area).permit(:name,
-          :area_attributes_attributes => [:id, :name, :value]
-        )
+
+      params.require(:area).permit(:name, :content, :area_name,
+       :value, :area_attributes_attributes => [:id, :name, :value])
+
     end
   end

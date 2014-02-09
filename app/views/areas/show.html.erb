@@ -1,17 +1,16 @@
 <script>
-   jQuery(window).on('mercury:ready', function() { Mercury.saveUrl = '/areas/' + <%= @area.id %> + "/mercury_update"; });
+$(window).on('mercury:ready', function() { Mercury.saveUrl = '/areas/' + <%= @area.id %> + "/mercury_update"; });
 </script>
 
 <p id="notice"><%= notice %></p>
-<div id="area_name" data-mercury="full">
-  <strong>Name:</strong>
-  <%= @area.name %>
-</div>
+<strong>Name:</strong>
+<span id="area" data-mercury="full"><%= @area.name.html_safe %></span>
+
 <ul>
-<% for attribute in @area.area_attributes do%>
-<li id="area_area_attribute" class="mercury-region" data-type"editable"> Attribute Name: <%= attribute.name %>  Value: <%= attribute.value %><br />
-</li>
-<% end %>
+  <% for attribute in @area.area_attributes do%>
+  <li id="area_area_attribute" class="mercury-region" data-type"editable"> Attribute Name: <%= attribute.name %>  Value: <%= attribute.value %><br />
+  </li>
+  <% end %>
 </ul>
 <%= link_to "Edit with Mercury", "/editor" + request.path, id: "edit_link", data: {save_url: mercury_update_area_path(@area)} %> |
 <%= link_to 'Edit', edit_area_path(@area) %> |
